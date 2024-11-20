@@ -8,6 +8,18 @@ public class StudentDemo4
 {
     public static void main(String[] args) {
 
+        /*
+          Wrapper Classes :
+              List :    LIFO ,FIFO
+                    List<int>      (OBJECT)
+                    ArrayList
+                    LinkedList
+              set :
+                        Hashset
+               HashTable
+               HashMap
+         */
+
         int rollno[] = new int[5];
         int maths[] = new int[5];
         int science[] = new int[5];

@@ -1,0 +1,21 @@
+option                  private     protected       default     public
+same file
+same class               yes            yes         yes         yes
+
+same file
+different class          no             yes         yes        yes
+
+same file
+sub class                no             yes         yes       yes
+
+same package
+non sub class            no              yes         yes         yes
+
+same package
+sub class                no               yes         yes         yes
+
+different package
+sub class                no                yes         no          yes
+
+different package
+non sub class           no                  no          no           yes

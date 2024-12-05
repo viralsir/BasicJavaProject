@@ -8,8 +8,12 @@ public class DMart
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Vendor> vendors = new ArrayList<Vendor>();
-        ArrayList<Cutomer> customers=new ArrayList<Cutomer>();
+//        ArrayList<Vendor> vendors = new ArrayList<Vendor>();
+//        ArrayList<Cutomer> customers=new ArrayList<Cutomer>();
+//
+         ArrayList<Order> vendors=new ArrayList<Order>();
+         ArrayList<Order> customers=new ArrayList<Order>();
+
         int option1=0,option2=0;
 
         do
@@ -40,9 +44,10 @@ public class DMart
                                  String option3="y";
                                  do{
                                      System.out.println("\n\t\t\t Purchase  Entry\n\n");
-                                     Vendor vendor=new Vendor();
-                                     vendor.setVendor();
-                                     vendors.add(vendor);
+                                     //Vendor vendor=new Vendor();
+                                     Order order=new Order();
+                                     order.setOrder("Vendor");
+                                     vendors.add(order);
                                      System.out.println("Do you want to add another bill(y/n)?:");
                                      option3 = sc.next();
 
@@ -50,9 +55,9 @@ public class DMart
                                  break;
                             case 2:
                                 System.out.println("\n\t\t\t Purchase  View\n\n");
-                                for(Vendor v:vendors)
+                                for(Order v:vendors)
                                 {
-                                     v.getVendor();
+                                     v.getOrder("vendor");
                                     System.out.println("------------------------");
                                 }
                             break;
@@ -86,9 +91,9 @@ public class DMart
                                 String option3="y";
                                 do{
                                     System.out.println("\n\t\t\t Sales  Entry\n\n");
-                                    Cutomer customer=new Cutomer();
-                                    customer.setCustomer();
-                                    customers.add(customer);
+                                    Order order=new Order();
+                                    order.setOrder("Customer");
+                                    customers.add(order);
                                     System.out.println("Do you want to add another bill(y/n)?:");
                                     option3 = sc.next();
 
@@ -96,9 +101,9 @@ public class DMart
                                 break;
                             case 2:
                                 System.out.println("\n\t\t\t Sales  View\n\n");
-                                for(Cutomer c:customers)
+                                for(Order c:customers)
                                 {
-                                    c.getCustomer();
+                                    c.getOrder("Customer");
                                     System.out.println("------------------------");
                                 }
                                 break;

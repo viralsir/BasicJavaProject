@@ -3,7 +3,7 @@ package SmallProjectDemo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Vendor extends PersonalDetails
+public class Order extends PersonalDetails
 {
     int billno;
     String billdate;
@@ -15,7 +15,7 @@ public class Vendor extends PersonalDetails
 
 
 
-    void setVendor()
+    void setOrder(String title)
     {
         Scanner sc=new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class Vendor extends PersonalDetails
         System.out.print("Enter the billdate");
         billdate=sc.next();
 
-        setPersonalDetails("Vendor");
+        setPersonalDetails(title);
         String option="y";
         do{
                ProductDetails product=new ProductDetails();
@@ -45,11 +45,12 @@ public class Vendor extends PersonalDetails
         billamount = billamount + tax-discount;
     }
 
-    void getVendor(){
+    void getOrder(String title)
+    {
 
         System.out.println("Bill No:"+billno);
         System.out.println("Bill Date:"+billdate);
-        getPersonalDetails("Vendor");
+        getPersonalDetails(title);
 
         System.out.println("Id \t Name \t Qty \t Rate \t Price \n");
         System.out.println("=========================================");

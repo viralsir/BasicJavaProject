@@ -1,5 +1,7 @@
 package SmallProjectDemo;
 
+import myLib.ValidationLib;
+
 import java.util.Scanner;
 
 public class ProductDetails
@@ -17,12 +19,20 @@ public class ProductDetails
         id = sc.nextInt();
         System.out.print("Enter product name: ");
         name = sc.next();
-        System.out.print("Enter product qty: ");
-        qty = sc.nextInt();
+        //ValidationLib va = new ValidationLib();
+
+        do {
+            System.out.print("Enter product qty: ");
+            qty = sc.nextInt();
+
+        }while(!ValidationLib.isPositive(qty));
+
         System.out.print("Enter product rate: ");
         rate = sc.nextFloat();
         price = qty * rate;
     }
+
+
 
     void getProductDetails()
     {

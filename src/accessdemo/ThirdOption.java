@@ -8,6 +8,4 @@ public class ThirdOption
     public int pu=3434;
 
 
-
-
 }

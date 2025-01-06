@@ -30,7 +30,7 @@ class ByteArrayOutputStreamDemo
 	public static void main(String args[]) throws Exception
 	{
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
-		String temp="this is firstdemo by KRUSHA";
+		String temp="this is firstdemo by KHUSHI";
 		byte b[] = temp.getBytes();
 		bout.write(b);
 		System.out.println("String is : " + bout.toString());

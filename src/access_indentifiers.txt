@@ -1,4 +1,4 @@
-option                  private     protected       default     public
+option                  private     protected      default     public
 same file
 same class               yes            yes         yes         yes
 

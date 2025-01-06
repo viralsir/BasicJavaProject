@@ -1,5 +1,4 @@
 package iopackage;
-
 import java.io.*;
 class FileReaderDemo
 {
